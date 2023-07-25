@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let estoque = {};
+
+        function adicionarAoEstoque(nomeProduto, quantidade) {
+            estoque[nomeProduto] = (estoque[nomeProduto] || 0) + quantidade;
+        }
+
+        function removerDoEstoque(nomeProduto, quantidade) {
+            if (estoque[nomeProduto] && estoque[nomeProduto] >= quantidade) {
+                estoque[nomeProduto] -= quantidade;
+                console.log(`Removido ${quantidade} unidades do produto "${nomeProduto}" do estoque.`);
+            } else {
+                console.log(`Não há quantidade suficiente do produto "${nomeProduto}" no estoque.`);
+            }
+        }
+
+
+        adicionarAoEstoque("Produto A", 10);
+        adicionarAoEstoque("Produto B", 5);
+
+        removerDoEstoque("Produto A", 3);
+        removerDoEstoque("Produto B", 7);
+
+        console.log(estoque);
+    </script>
+</body>
+</html>

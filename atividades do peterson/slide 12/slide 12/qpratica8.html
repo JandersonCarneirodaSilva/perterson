@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 12</title>
+</head>
+
+<body>
+
+    <script>
+
+        let receitas = [
+            {
+                nome: "torta alema",
+                ingredientes: ["farinha de trigo", "açúcar", "creme", "ovo", "leite", "margarina"],
+                tempoPreparo: "30 minutos"
+            },
+            {
+                nome: "Arroz",
+                ingredientes: ["Arroz", "agua", "sal", "3 dentes de alho",],
+                tempoPreparo: "45 minutos"
+            },
+           
+        ];
+
+        // Exemplo: Exibindo as receitas no console
+        for (let i = 0; i < receitas.length; i++) {
+            let receita = receitas[i];
+            console.log(`Receita: ${receita.nome}`);
+            console.log("Ingredientes:", receita.ingredientes.join(", "));
+            console.log(`Tempo de Preparo: ${receita.tempoPreparo}\n`);
+        }
+    </script>
+
+</body>
+
+</html>

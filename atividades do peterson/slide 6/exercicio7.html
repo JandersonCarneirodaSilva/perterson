@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let peso = parseFloat(prompt("Digite o peso em KG"));
+let altura = parseFloat(prompt("Digite a altura :"));
+
+
+let imc = peso / (altura * altura);
+
+
+console.log("O IMC é:", imc);
+
+
+if (imc < 18.5) {
+  console.log("Abaixo do peso");
+  document.write("Abaixo do peso    seu imc:" + imc )
+} else if (imc >= 18.5 && imc < 24.9) {
+  console.log("Peso normal");
+  document.write("Peso normal   seu imc:" + imc )
+} else if (imc >= 25 && imc < 29.9) {
+  console.log("Sobrepeso");
+  document.write("Sobrepeso   seu imc:" + imc )
+} else if (imc >= 30 && imc < 35) {
+  console.log("Obesidade Grau I");
+  document.write("Obesidade Grau I  seu imc:" + imc )
+} else if (imc >= 35 && imc < 40) {
+  console.log("Obesidade extrema");
+  document.write("Obesidade extrema  seu imc:" + imc )
+} else {
+  console.log("VAI MORRER JAJA");
+  document.write("VAI MORRER JAJA  seu imc:" + imc )
+}
+    </script>
+</body>
+</html>

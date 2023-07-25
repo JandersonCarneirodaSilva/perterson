@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //CONVERTI O CODIGO PARA JS
+
+
+        //cria uma variavel que recebe uma nota
+       let nota = 6
+        //se e senão para avaliar a nota de aluno
+        //onde menor que 5 é ruim, menor que 7 regular
+        //menor que 9 bom
+        //se for maior que 9 sai execelente 
+        //obs: na teoria se a pessoa tirar  9.1 vai ser excelente igual a quem tira 10
+       if(nota < 5){
+            console.log("ruim")
+            document.write("ruim")
+        } else if(nota < 7){
+            console.log("Regular")
+            document.write("Regular")
+        } else if (nota < 9) {
+            console.log ("Bom")
+            document.write("Bom")
+        } else {
+            console.log("Excelente")
+            document.write("Excelente")
+        }
+
+        //se colocar -3 vai estar abaido de 5, logo vai ser ruim
+        //se colocar 11 vai estar acima de 9 logo vai ser excelente
+        //pode sim
+     
+     
+     //----------CODIGO MELHORADO-----------------------
+     
+       /* let nota = prompt("DIGITE SUA NOTA")
+
+        if (nota < 0) {
+            console.log("ERROR NUMERO NEGATIVO")
+            document.write("ERROR NUMERO NEGATIVO") 
+        }
+       else if(nota <= 5){
+            console.log("ruim")
+            document.write("ruim")
+        } else if(nota <= 7){
+            console.log("Regular")
+            document.write("Regular")
+        } else if (nota <= 9) {
+            console.log ("Bom")
+            document.write("Bom")
+        } else if (nota == 10) {
+            console.log("Excelente")
+            document.write("Excelente")
+        } else {
+            console.log("ERROR, NUMERO MAIOR QUE 10")
+            document.write("ERROR, NUMERO MAIOR QUE 10")
+        } */
+    </script>
+    
+</body>
+</html>

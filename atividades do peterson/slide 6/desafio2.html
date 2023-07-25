@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let VA1 = parseInt(prompt("Escreva o número 1"));
+        let VA2 = parseInt(prompt("Escreva o número 2"));
+        let VA3 = parseInt(prompt("Escreva o número 3"));
+        
+        let maior;
+        let meio;
+        let menor;
+
+        if (VA1 > VA2 && VA1 > VA3){
+            maior = VA1;
+            if (VA2 > VA3) {
+                meio = VA2;
+                menor = VA3;
+            } else {
+                meio = VA3;
+                menor = VA2;
+            }
+        } else if (VA2 > VA1 && VA2 > VA3){
+            maior = VA2;
+            if (VA1 > VA3) {
+                meio = VA1;
+                menor = VA3;
+            } else {
+                meio = VA3;
+                menor = VA1;
+            }
+        } else {
+            maior = VA3;
+            if (VA1 > VA2) {
+                meio = VA1;
+                menor = VA2;
+            } else {
+                meio = VA2;
+                menor = VA1;
+            }
+        }
+
+        document.write(maior + "<br>");
+        document.write(meio + "<br>");
+        document.write(menor + "<br>");
+    </script>
+</body>
+</html>

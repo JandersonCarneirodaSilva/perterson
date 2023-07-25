@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let estoque = {}
+
+        function adicionarAoEstoque(nomeProduto, quantidade) {
+            estoque[nomeProduto] = (estoque[nomeProduto] || 0) + quantidade
+        }
+
+        function quantidadeTotalEstoque() {
+            let total = 0
+            for (let produto in estoque) {
+                total += estoque[produto]
+            }
+            return total
+        }
+
+       
+        adicionarAoEstoque("Produto A", 10)
+        adicionarAoEstoque("Produto B", 5)
+
+        let totalEstoque = quantidadeTotalEstoque()
+        console.log(`A quantidade total de produtos em estoque é: ${totalEstoque}`)
+    </script>
+</body>
+</html>

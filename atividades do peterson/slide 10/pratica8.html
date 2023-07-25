@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vendas2021 = [];
+        let vendas2022 = [];
+        let mesi2 = 1
+// Recebendo os valores de vendas de cada mês de 2021
+for (let i = 0; i <= 11; i++) {
+  let vendaMes = parseFloat(prompt("Digite o valor de vendas do mês " + mesi2 + " de 2021:"));
+  vendas2021.push(vendaMes);
+
+  // Recebendo o valor total de vendas de 2022
+
+  let vendaMes2 = parseFloat(prompt("Digite o valor de vendas do mês " + mesi2 + " de 2022:"));
+  vendas2022.push(vendaMes2);
+
+  console.log( "2021 venda : " + vendas2021)
+  console.log( "2022 venda : " + vendas2022)
+  mesi2 ++
+}
+
+let soma = 0
+let mesi = 1
+for (let i = 0; i <= 11; i++) {
+  soma = vendas2021[i] + vendas2022[i]
+  console.log(soma + "soma referente aos meses" + mesi + "de 2021 e 2022")
+  mesi ++
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cria uma variavel chamda livros, que é um objeto que contem arrays
+        //cada {} é um array e dentro dele contem carateristicas assim como obejto
+        //entao para acessar algo você nescessita, colocar a variavel, a identificação do array
+        //e o item desejado
+        const livros = [
+            {titulo: "O snhor dos Anéis", autor: "J.R.R. Tolkien", ano: 1954},
+            {titulo: "Harry Potter e a Pedra Filosofal", autor: "J.K. Rowling", ano: 1997},
+            {titulo: "1984", autor: "George Orwell", ano: 1949}
+        ]
+
+       
+
+        //aqui vai mostra o item 3 do array livros,(porque não o segundo? ja que o numero é 2)
+        //porque começa a contar do 0 os array
+        //logo o que vai aparecer é (1949) o ano 
+        console.log(livros[2].ano)
+    </script>
+</body>
+</html>

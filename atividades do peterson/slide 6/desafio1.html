@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let idade1 = prompt("Escreva a idade1")
+        let idade2 = prompt("Escreva a idade2")
+        let idade3 = prompt("Escreva a idade3")
+        let idade4 = prompt("Escreva a idade4")
+        let idade5 = prompt("Escreva a idade5")
+
+
+        let maior
+        let menor
+
+        if(idade1 > idade2 && idade1 > idade3 && idade1 > idade4 && idade1 > idade5){
+
+            maior = idade1
+        } else if (idade2 > idade1 && idade2 > idade3 && idade2 > idade4 && idade2 > idade5){
+            maior = idade2
+        } else if (idade3 > idade1 && idade3 > idade2 && idade3 > idade4 && idade3 > idade5){
+            maior = idade3
+        } else if(idade4 > idade1 && idade4 > idade2 && idade4 > idade3 && idade4 > idade5){
+            maior = idade4
+        } else {
+            maior = idade5
+        }
+
+        if(idade1 < idade2 && idade1 < idade3 && idade1 < idade4 && idade1 < idade5){
+
+menor = idade1
+} else if (idade2 < idade1 && idade2 < idade3 && idade2 < idade4 && idade2 < idade5){
+menor = idade2
+} else if (idade3 < idade1 && idade3 < idade2 && idade3 < idade4 && idade3 < idade5){
+menor = idade3
+} else if(idade4 < idade1 && idade4 < idade2 && idade4 < idade3 && idade4 < idade5){
+menor = idade4
+} else {
+menor = idade5
+}
+
+document.write("idade maior é " + maior + " <br>")
+
+document.write("idade menor é" + menor)
+    </script>
+</body>
+</html>

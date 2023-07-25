@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let jogar = 0
+let numerador1 = 0
+let x
+let pontoCara = 0
+let pontoCoroa = 0
+while(jogar != -1){
+    prompt("escolha entre CARA E COROA")
+    numerador1 = Math.floor(Math.random() * 10) + 1;
+    x = numerador1 % 2
+    if(x == 0){
+        alert("CARA GANHOU")
+        pontoCara ++
+    } else{
+        alert("COROA VENCEU")
+        pontoCoroa ++
+    }
+
+  let v =  prompt("deeseja continuar (s)im , (n)ão")
+    if(v == "n"){
+        jogar = -1
+    }
+}
+document.write("pontos cara  " + pontoCara + "<br>")
+document.write("pontos coroa  " + pontoCoroa)
+    </script>
+</body>
+</html>

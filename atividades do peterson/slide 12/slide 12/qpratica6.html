@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pessoa1 = {
+            nome: "João",
+            idade: 25
+        };
+        let pessoa2 = {
+            nome: "Maria",
+            idade: 30
+        };
+        let pessoa3 = {
+            nome: "Pedro",
+            idade: 22
+        };
+        let pessoas = [pessoa1, pessoa2, pessoa3]
+
+        for (let i = 0; i < pessoas.length; i++) {
+            let pessoa = pessoas[i];
+            console.log(`Nome: ${pessoa.nome}, Idade: ${pessoa.idade}`)
+        }
+    </script>
+</body>
+</html>

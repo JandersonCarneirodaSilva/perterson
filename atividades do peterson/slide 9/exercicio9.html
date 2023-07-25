@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+    let i = 0
+    while (i != -1) {
+        const numeroConta = parseInt(prompt("Digite o número da conta (ou digite -1 para sair):"))
+        
+        if (numeroConta === -1) {
+          i = -1
+        }
+        
+        let saldoInicial = parseInt(prompt("Digite o saldo inicial do mês:"))
+        let totalDespesas = parseInt(prompt("Digite o total de despesas do cliente no mês:"))
+        let totalCreditos = parseInt(prompt("Digite o total de créditos aplicados ao cliente no mês:"))
+        let limiteCredito = parseInt(prompt("Digite o limite de crédito autorizado:"))
+        
+        let novoSaldo = saldoInicial + totalDespesas - totalCreditos
+        
+        console.log(`Novo saldo: ${novoSaldo}`)
+        
+        if (novoSaldo > limiteCredito) {
+          console.log("Limite de crédito excedido")
+        }
+    }</script>
+    
+</body>
+</html>

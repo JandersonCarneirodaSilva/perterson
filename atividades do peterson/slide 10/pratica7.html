@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let notas1 = []
+ let notas2 = []
+for (let i = 1; i <= 10; i++) {
+  let nota = parseFloat(prompt("Digite a nota do aluno " + i + ":"))
+
+ 
+  if (nota >= 0 && nota < 7) {
+    notas1.push(nota)
+  } else if (nota >= 7 && nota <= 10) {
+    notas2.push(nota)
+  }  else {
+    alert("Nota inválida! Digite um valor entre 0 e 10.")
+    i-- 
+  }
+}
+
+console.log("Notas dos alunos aprovados: " + notas1)
+
+console.log("Notas dos alunos reprovados: " + notas2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produto = parseFloat(prompt("Digite o valor do produto"))
+        let opicao = parseInt(prompt(`que opção você deseja.
+         - 1 avista com 10% de desconto
+         -2 a vista no cartão de cesdito, 5% de desconto
+         3- em duas vezes preço normal
+         4- em três vezes, com 10% de juros`))
+        let valor = 0
+        let porcen
+      //  function op1 (){
+            
+        // }
+        if(opicao == 1){
+            porcen = produto * 0.10
+            console.log(porcen)
+            valor = produto - porcen
+            alert("Valor final:" + valor)
+        } else if(opicao == 2){
+            porcen = produto * 0.05
+            console.log(porcen)
+            valor = produto - porcen
+            alert("Valor final:" + valor)
+        } else if(opicao == 3){
+           // porcen = produto * 0.10
+           // console.log(porcen)
+            valor = produto / 2
+            alert("Valor final: 2x de " + valor)
+        } else {
+            porcen = produto * 0.10
+            console.log(porcen)
+            valor = (produto / 3) + porcen
+            alert("Valor final:" + valor) 
+        }
+
+         
+
+
+    </script>
+</body>
+</html>

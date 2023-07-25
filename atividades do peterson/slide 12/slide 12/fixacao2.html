@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declara uma variavel carro que recebe caracterirsticas do obejto
+
+        const carro = {
+            marca: "Honda",
+            modelo: "Civic",
+            ano: 2022,
+//cria uma função dentro do obejto que vai mostrar a marca, modelo e o ano separado por "-"
+
+            mostra: function(){
+                console.log(`${this.marca} - ${this.modelo} - ${this.ano}`)
+            }
+        }
+//chama a funcão que está dentro da "variavel" que não é uma variavel mas pode ser entendida como
+// e essa variavel chama a função 
+        carro.mostra()
+    </script>
+</body>
+</html>

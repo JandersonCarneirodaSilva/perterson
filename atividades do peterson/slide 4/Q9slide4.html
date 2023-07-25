@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 4</title>
+</head>
+
+<body>
+
+    <script>
+
+        let a = parseFloat(prompt("Escreva o valor de a"));
+        let b = parseFloat(prompt("Escreva o valor de b"));
+        let c = parseFloat(prompt("Escreva o valor de c"));
+
+        let delta = b**2 - 4 * a * c;
+        let raiz1, raiz2;
+
+        if (delta > 0) {
+            raiz1 = (-b + (delta ** 0.5)) / (2 * a);
+            raiz2 = (-b - (delta ** 0.5)) / (2 * a);
+            console.log("As raízes da equação são: " + raiz1 + " e " + raiz2);
+            alert("As raízes da equação são: " + raiz1 + " e " + raiz2);
+        } else if (delta === 0) {
+            raiz1 = -b / (2 * a);
+            console.log("A raiz da equação é: " + raiz1);
+            alert("A raiz da equação é: " + raiz1);
+        } else {
+            console.log("A equação não possui raízes reais.");
+            alert("A equação não possui raízes reais.");
+        }
+    </script>
+
+</body>
+
+</html>
